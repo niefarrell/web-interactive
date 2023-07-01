@@ -1,38 +1,100 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --krem:#FDB7A6;
+  --ungu: #AD40BD;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.card {
+  background-color: #ffffff21;
+  color: #fff;
+  border-radius: 40px;
+  padding: 16px;
+
+}
+
+.card h1 {
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+.profile img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mt-16 {
+  margin-top: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card .btn_action {
+  margin-top: 10px;
+  padding: 5px 12px;
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid ;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn_action span {
+  padding-left: 8px;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.card .btn_action:hover {
+  color: var(--krem) ;
+  border: 1px solid var(--ungu);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg_action {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  background: #2927278f;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
